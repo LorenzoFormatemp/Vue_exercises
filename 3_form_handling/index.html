@@ -18,10 +18,17 @@
             <h1>Form Handling</h1>
 
 
-            <label for="name" class="form-label">Nome</label>
+            <label for="name" class="form-label" v-bind:class="name == '' ? 'd-none' : 'd-block'">Nome</label>
             <input type="text" class="form-control w-50" v-model="name" placeholder="Enter your name">
 
             <button class="btn btn-primary mt-3" @click="greet">Greet</button>
+
+            <!-- se greeting esiste ed è diverso da vuoto: mostra questo p -->
+            <p v-if="greeting == '' ? 'ciao' : 'd-none'">{{ greeting }}</p>
+            
+            <!-- altrimenti: mostra quest'altro p -->
+            <p v-else>Please Enter your name</p>
+
         </div>
 
     </div>
@@ -43,7 +50,10 @@
             methods: {
                 greet(){
                     if(this.name.trim()){
-                        this.greeting = `Hello, ${this.name}!`
+                        this.greeting = `Hello, ${this.name}!`;
+
+                        const p = document.createElement('p');
+
                     } else {
                         this.greeting = '';
                     }
