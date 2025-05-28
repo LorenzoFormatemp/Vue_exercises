@@ -10,20 +10,46 @@
 <body>
     
 
+    <div id="app">
 
 
+        <div class="container w-50">
+
+            <h1>Form Handling</h1>
 
 
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control w-50" v-model="name" placeholder="Enter your name">
 
+            <button class="btn btn-primary mt-3" @click="greet">Greet</button>
+        </div>
 
-
-
-
+    </div>
 
 
     <!-- vue cdn -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-    <script></script>
+    <script>
+        const { createApp } = Vue;
+        
+        createApp({
+            data(){
+                return {
+                    name: "",
+                    greeting: ""
+                }
+            },
+            methods: {
+                greet(){
+                    if(this.name.trim()){
+                        this.greeting = `Hello, ${this.name}!`
+                    } else {
+                        this.greeting = '';
+                    }
+                }
+            }
+        }).mount('#app');
+    </script>
 </body>
 </html>
