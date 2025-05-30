@@ -2,7 +2,7 @@
 
 
 main{
-
+    /* upper content */
     .content{
 
         background-color: $dark;
@@ -38,5 +38,36 @@ main{
         }
     }
 
+    /* features section */
+    .features{
+        background-color: $primary_color;
 
+        .container{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        img{
+            width: 40px;
+        }
+
+        .card{
+            display: flex;
+            align-items: center;
+            
+            span{
+                text-transform: uppercase;
+                color:$light;
+                font-size: $fs_md;
+                padding-left: 0.5rem;
+            }
+
+            /* locator img => width: 30px */
+
+
+
+        }
+
+    }
 }
