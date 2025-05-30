@@ -2,12 +2,13 @@
 
 import comics from '../assets/data/comics';
 import AppHero from './AppHero.vue';
-
+import ComicItem from './ComicItem.vue';
 
 export default {
     name: 'SiteMain',
     components : {
-        AppHero
+        AppHero,
+        ComicItem
     },
     data () {
         return {
@@ -26,8 +27,17 @@ export default {
         
         <div class="content">
 
+            <!-- Jumbotron -->
             <AppHero/>
-            <!-- container => i fumetti: ComicItem-->
+
+            <div class="container">
+                <!--  comicItem-->
+                <ComicItem v-for="comic in comics"
+                    :img="comic.thumb"
+                    :title="comic.series"
+                />
+            
+            </div>
 
         </div>
 
