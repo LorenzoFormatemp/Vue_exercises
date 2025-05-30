@@ -1,6 +1,7 @@
 <script setup>
 
 import SiteHeader from './components/SiteHeader.vue';
+import SiteMain from './components/SiteMain.vue';
 
 </script>
 
@@ -10,7 +11,7 @@ import SiteHeader from './components/SiteHeader.vue';
   <SiteHeader/>
 
   <!-- main -->
-
+  <SiteMain/>
 
   <!-- footer -->
 
