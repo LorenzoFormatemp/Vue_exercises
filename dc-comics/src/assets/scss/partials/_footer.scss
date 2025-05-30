@@ -19,6 +19,9 @@ footer{
                 padding-top:2.5rem;
                 padding-bottom:2.5rem;
             }
+            ul{
+                list-style-type: none;
+            }
 
         }
 
@@ -32,10 +35,63 @@ footer{
             padding-bottom:0.5rem;
             font-size: $fs_sm;
             color:$clr_hash;
+            text-decoration: none;
 
             &:hover{
                 color: $primary_color;
             }
+
+        }
+        .shop{
+            margin-top:1rem;
+        }
+    }
+
+    .footer-bottom{
+        background-color: $bg_dark;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            a{
+                text-transform: uppercase;
+                color:$light;
+                padding: 0.75rem 0.65rem;
+                border: 2px solid $primary_color;
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: $primary_color;
+                }
+            }
+
+            .social{
+                display: flex;
+                align-items: center;
+
+                .follow{
+                    text-transform: uppercase;
+                    color: $primary_dark;
+                    font-weight: bold;
+                    padding-right: 1rem;
+                }
+
+                img{
+                    background-color: $dark;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    width:30px;
+                    margin-inline: 0.5rem;
+                }
+
+
+
+            }
+
 
         }
     }

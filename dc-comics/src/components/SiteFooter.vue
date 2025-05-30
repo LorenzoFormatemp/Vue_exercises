@@ -34,7 +34,7 @@ export default {
                         <li><a href="#">News</a></li>
                     </ul>
 
-                    <div>
+                    <div class="shop">
                         <h3>Shop</h3>
                         <ul>
                             <li>
@@ -81,6 +81,25 @@ export default {
         </div>
 
         <!-- bottom -->
+        <div class="footer-bottom">
+
+            <div class="container">
+                <div class="col">
+                    <div class="btn">
+                        <a>Sign UP Now!</a>
+                    </div>
+                </div>
+
+                <div class="social">
+                    <div class="follow">Follow Us</div>
+                    <img :src="icon.path" alt="social-icon-img" v-for="icon in icons">
+
+                </div>
+
+
+            </div>
+
+        </div>
     </footer>
 
 
