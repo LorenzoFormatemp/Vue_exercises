@@ -1,9 +1,14 @@
 <script>
 
 import comics from '../assets/data/comics';
+import AppHero from './AppHero.vue';
+
 
 export default {
     name: 'SiteMain',
+    components : {
+        AppHero
+    },
     data () {
         return {
             comics: comics
@@ -21,8 +26,7 @@ export default {
         
         <div class="content">
 
-            <!-- component Hero: AppHero -->
-
+            <AppHero/>
             <!-- container => i fumetti: ComicItem-->
 
         </div>

@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+
+main{
+
+    .content{
+
+        background-color: $dark;
+        color: $light;
+        
+        .jumbotron{
+            height: 400px;
+            background-image: url('/img/jumbotron.jpg');
+            background-size: cover;
+        }
+
+    }
+
+
+}
