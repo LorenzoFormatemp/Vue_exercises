@@ -1,0 +1,46 @@
+@use 'variables' as *;
+
+footer{
+
+    .footer-top{
+        background-image: url('/img/footer-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .container{
+            display: flex;
+            gap: 2rem;
+            background-image: url('/img/dc-logo-bg.png');
+            background-position: right;
+            background-repeat: no-repeat;
+
+            .col{
+                padding-top:2.5rem;
+                padding-bottom:2.5rem;
+            }
+
+        }
+
+        h3{
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+            color:$light;
+        }
+        a{
+            padding-top:0.5rem;
+            padding-bottom:0.5rem;
+            font-size: $fs_sm;
+            color:$clr_hash;
+
+            &:hover{
+                color: $primary_color;
+            }
+
+        }
+    }
+
+
+
+
+}
