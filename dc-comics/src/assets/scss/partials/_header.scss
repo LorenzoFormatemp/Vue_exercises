@@ -35,6 +35,12 @@ header{
             color:$bg_dark;
             text-transform: uppercase;
             font-size: $fs_md;
+
+            &:hover{
+                color: $primary_color;
+                box-shadow: 0 2px $primary_color;
+                padding-bottom: 2.5rem;
+            }
         }
     }
 
