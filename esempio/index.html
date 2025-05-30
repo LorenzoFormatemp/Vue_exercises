@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const users = [
+            {
+                name: 'Marco',
+                email: 'marco@mail.it'
+            },
+            {
+                name: 'Marco',
+                email: null
+            },
+            {
+                name: 'Luigi'
+            }
+        ];
+        
+        users.forEach((user, index) => {
+
+           
+            sendEmail(user.email);
+            
+        });
+
+        function sendEmail(email = null){ // valore di default
+            if(!email){
+                return;
+            }
+
+
+            // invia mail
+        }
+
+
+    </script>
+</body>
+</html>
